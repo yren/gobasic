@@ -1,1 +1,3 @@
 # gobasic
+
+hello readme
