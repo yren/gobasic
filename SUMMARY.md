@@ -6,4 +6,4 @@
 
 ## Go basic
 
-* foo
+* [foo](gotest/0001.helloworld.md)
