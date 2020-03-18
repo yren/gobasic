@@ -2,8 +2,8 @@
 
 ## Go with test
 
-* [hello world](gotest/0001.helloworld.md)
+* [hello world](gotest/001.helloworld.md)
 
 ## Go basic
 
-* [foo](gotest/0001.helloworld.md)
+* [docs](gobasic/001.doc.md)
