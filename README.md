@@ -1,3 +1,3 @@
 # gobasic
 
-hello readme
+[gobasic gitbook](https://yren.gitbook.io/gobasic/)
