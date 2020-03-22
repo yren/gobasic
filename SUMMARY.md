@@ -7,3 +7,7 @@
 ## Go basic
 
 * [docs](gobasic/001.doc.md)
+
+## vscode
+
+* [setup](vscode/001.setup.md)
