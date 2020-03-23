@@ -7,6 +7,8 @@
 ## Go basic
 
 * [docs](gobasic/001.doc.md)
+* [type assertions](gobasic/002.type_assertions.md)
+
 
 ## vscode
 
