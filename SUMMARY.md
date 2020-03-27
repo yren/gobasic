@@ -8,6 +8,7 @@
 
 * [docs](gobasic/001.doc.md)
 * [type assertions](gobasic/002.type_assertions.md)
+* [go tool pprof](gobasic/003.pprof.md)
 
 
 ## vscode
