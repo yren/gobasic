@@ -19,6 +19,7 @@
 
 * [arcanist](tool/001.arcanist.md)
 * [phabricator](tool/002.phabricator.md)
+* [idea](tool/003.idea.md)
 
 ## shell
 
