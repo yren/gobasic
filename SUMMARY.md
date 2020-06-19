@@ -20,6 +20,8 @@
 * [arcanist](tool/001.arcanist.md)
 * [phabricator](tool/002.phabricator.md)
 * [idea](tool/003.idea.md)
+* [goland](tool/004.goland.md)
+* [git](tool/oo5.git.md)
 
 ## shell
 
