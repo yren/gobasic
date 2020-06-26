@@ -26,3 +26,7 @@
 ## shell
 
 * [shell](shell/001.shell.md)
+
+## data structure & algorithm
+
+* [link list](algorithm/001.linklist.md)
