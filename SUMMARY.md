@@ -10,6 +10,9 @@
 * [type assertions](gobasic/002.type_assertions.md)
 * [go tool pprof](gobasic/003.pprof.md)
 
+## k8s
+
+* [k8s](k8s/001.k8s.md)
 
 ## vscode
 
