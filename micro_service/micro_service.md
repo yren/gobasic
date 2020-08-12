@@ -72,3 +72,25 @@ service 发生变化，(节点增加或删除)，注册中心通知变更给消�
 
 
 ## 服务如何注册和发现
+注册中心原理:
+主要三种角色: Registry (注册中心)， RPC server, RPC client
+* RPC server 提供服务， 启动时，向 Registry 注册自己，并定期发送心跳汇报存活状态
+* RPC client 使用服务，启动时，向 Registry 订阅服务，将服务节点列表缓存在本地
+* RPC server 变更时， Registry 同步变更， 通知 RPC client 刷新本地服务节点列表
+* RPC client , 根据负载均衡算法，选择一个 RPC server 发起调用
+
+### (Registry) 服务中心一般提供的接口
+* 服务注册接口
+* 服务注销接口
+* 心跳汇报接口
+* 服务订阅接口
+
+### 服务中心集群部署
+* Registry 需要高可用，一般集群部署，并通过分布式一致性协议保持个节点之前的数据一致性。
+ZooKeeper (开源注册中心) 的工作原理:
+* 每个 server 保存一份数据， client 可以请求任意 server
+* zooKeeper 启动时，从实例中选举一个 leader (paxos 协议)
+* leader 负责数据处理和更新到其他 server
+* 一个更新成功，当且仅当大多数 server 修改成功
+
+这样 zooKeeper 保证了高可用性和数据一致性
