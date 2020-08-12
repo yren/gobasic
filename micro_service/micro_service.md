@@ -156,3 +156,16 @@ traceID : requestID
 spanID: 0.1.1 (系统不同服务间的先后关系)
 annotation: 业务自定义的一些感兴趣的数据
 
+## 微服务治理
+
+* 节点管理
+* 负载均衡
+随机算法，轮询算法，最少活跃调用算法，一致性 hash , 
+
+
+* 服务路由
+* 服务容错
+fail over 失败自动切换
+FailBack 失败通知，根据失败信息决定后续策略
+FailCache 失败缓存
+FailFast 快速失败
