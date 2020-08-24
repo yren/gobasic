@@ -32,7 +32,7 @@ LIST, 列表, 从两端压入或者弹出元素
 只保留一个范围内的元素
 
 SET, 无序集合
-ZSET (Sorted Set), 有序集合
+(Sorted Set), 有序集合
 HASH, 包含键值对的无序散列表
 
 还需要加上下面几种数据结构HyperLogLog、Geo、Pub/Sub

@@ -264,4 +264,30 @@ nnoDB存储引擎能检测到死锁的循环依赖并立即返回一个错误。
 ## 查询优化
 永远小标驱动大表（小的数据集驱动大的数据集）
 
+## mysql on , where 在 join 的区别
+
+* 对于关联表的筛选条件应放到on后面
+* 对于主表的筛选条件应放在where后面
+
+为什么会存在差异，这和on与where查询顺序有关。
+
+我们知道标准查询关键字执行顺序为 from->where->group by->having->order by
+
+left join 是在from范围类所以 先on条件筛选表，然后两表再做left join。
+
+而对于where来说在left join结果再次筛选。
+
+## mysql 排它锁之行锁、间隙锁、后码锁
+* 行锁（Record Lock）:锁直接加在索引记录上面，锁住的是key。
+* 间隙锁（Gap Lock）:锁定索引记录间隙，确保索引记录的间隙不变。间隙锁是针对事务隔离级别为可重复读或以上级别而设计的。
+* 后码锁（Next-Key Lock）：行锁和间隙锁组合起来就叫Next-Key Lock。
+
+默认情况下，InnoDB工作在可重复读隔离级别下，并且会以Next-Key Lock的方式对数据行进行加锁，这样可以有效防止幻读的发生。
+加上间隙锁之后，其他事务就不能在这个间隙修改或者插入记录。
+
+（insert、update、delete、select for update）时
+
+
+
+
 
