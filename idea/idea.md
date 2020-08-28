@@ -9,3 +9,5 @@
 
 * opt + cmd + l, format code
 * shift + opt + cmd + l, show format code dialog
+
+* create test, 在类名， opt + enter, 选择 create test
