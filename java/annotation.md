@@ -48,4 +48,12 @@ RUNTIME:在运行时有效（即运行时保留）
 
 @Inherited, 阐述了某个被标注的类型是被继承的
 
+## 实现和使用自定义注解
+使用@interface自定义注解时，自动继承了java.lang.annotation.Annotation接口，由编译程序自动完成其他细节。
+@interface用来声明一个注解，其中的每一个方法实际上是声明了一个配置参数。方法的名称就是参数的名称，返回值类型就是参数的类型（返回值类型只能是基本类型、Class、String、enum）。可以通过default来声明参数的默认值。
+
+```
+public @interface 注解名 {定义体}
+```
+
 
