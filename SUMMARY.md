@@ -37,3 +37,6 @@
 ## java
 
 * [ArrayList 介绍](java/arraylist.md)
+
+## brew 
+* [brew update 慢](brew/brew_change_source.md)
