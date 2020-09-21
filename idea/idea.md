@@ -11,3 +11,10 @@
 * shift + opt + cmd + l, show format code dialog
 
 * create test, 在类名， opt + enter, 选择 create test
+
+* cmd + p, 显示方法参数
+
+* cmd + 7, 显示文件结构 (属性， 方法)
+* cmd + f12, 显示文件结构 (属性, 方法) pop up
+
+* shift + f6, 重构 rename
