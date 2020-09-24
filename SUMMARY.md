@@ -9,6 +9,7 @@
 * [docs](gobasic/001.doc.md)
 * [type assertions](gobasic/002.type_assertions.md)
 * [go tool pprof](gobasic/003.pprof.md)
+* [go 并发编程](gobasic/004.currency.md)
 
 ## k8s
 
